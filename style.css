@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+.minhadiv {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(246, 245, 247);
+    display: flex;
+    grid-template-columns: 2fr;
+    column-gap: 8px;
+    row-gap: 50px;
+    text-transform: uppercase;
+        position: absolute;
+    margin: 10px;
+}
+@media(min-width: 100px) {
+    .minhadiv{
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+@media(min-widwith:800px){
+    .minhadiv{
+        grid-template-columns: repeat((3,1fr));
+    }
+}
+@media(min-widwith:1000px){
+    .minhadiv{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
